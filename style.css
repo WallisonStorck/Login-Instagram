@@ -24,23 +24,28 @@ body {
   background-color: var(--background-body);
 }
 
-.instagram-group {
-  /* min-width: 350px; */
-  padding: 1.5rem 3rem;
+.instagram-wrapper {
+  margin: 3rem 0;
+}
+
+.instagram-logo {
+  margin: 2.5rem 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.instagram-group {
+  min-width: 350px;
+  padding: 1.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
 
   background-color: var(--background-white);
   border: 1px solid lightgray;
   margin-bottom: 10px;
-}
-
-.instagram-group .container {
-  min-width: 250px;
-  align-items: center;
-  gap: 1rem;
 }
 
 .instagram-group form {
@@ -57,7 +62,8 @@ body {
 }
 
 .instagram-group form button {
-  padding: 0.4rem 0;
+  margin: 0.6rem 0;
+  padding: 0.5rem 0;
   border: none;
   border-radius: 3px;
   color: var(--background-white);
@@ -66,9 +72,10 @@ body {
 }
 
 .separator {
+  margin: 0.3rem 0;
+
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .separator span {
@@ -78,7 +85,6 @@ body {
 }
 
 .line-separator {
-  /* width: 50px; */
   flex-grow: 1;
   height: 1px;
   margin: 0 1px;
@@ -87,10 +93,12 @@ body {
 }
 
 .login-facebook {
+  margin-top: 1.3rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .login-facebook a {
@@ -98,35 +106,54 @@ body {
 }
 
 .login-facebook a:nth-child(1) {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .not-account {
+  align-self: center;
 }
 
 .get-the-app {
-}
-
-.shops {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-/* .app-download {
+.shops {
+  /* display: flex;
+  align-items: center; */
+}
+
+.app-download {
   height: 3rem;
   width: 10rem;
   background-size: cover;
-} */
+}
 
-.app-download:nth-child(1) {
+.shops a:nth-child(1) {
   background-image: url("./assets/images/app-store.png");
 }
 
-.app-download:nth-child(2) {
+.shops a:nth-child(2) {
   background-image: url("./assets/images/google-play.png");
 }
 
 .not-account .sign-up {
   font-weight: 600;
   color: var(--btn-sign);
+}
+
+@media (max-width: 450px) {
+  body {
+    background-color: var(--background-white);
+  }
+
+  .instagram-group {
+    border: none;
+  }
+
+  /* .instagram-group:nth-child(1) { */
+  .box-one {
+    padding: 0 3rem;
+  }
 }

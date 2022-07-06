@@ -1,0 +1,132 @@
+:root {
+  --background-body: rgb(243, 243, 243);
+  --background-white: #ffffff;
+  --line-separator: rgb(219, 219, 219);
+  --color-or: #959595;
+  --btn-sign: #0095f6;
+  --login-facebook: #385185;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--background-body);
+}
+
+.instagram-group {
+  /* min-width: 350px; */
+  padding: 1.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--background-white);
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.instagram-group .container {
+  min-width: 250px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.instagram-group form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.instagram-group form input {
+  padding: 0.6rem;
+  border-radius: 3px;
+  border: 1px solid rgba(219, 219, 219, 1);
+}
+
+.instagram-group form button {
+  padding: 0.4rem 0;
+  border: none;
+  border-radius: 3px;
+  color: var(--background-white);
+  font-weight: 600;
+  background-color: var(--btn-sign);
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.separator span {
+  font-weight: 600;
+  color: var(--color-or);
+  margin: 0 15px;
+}
+
+.line-separator {
+  /* width: 50px; */
+  flex-grow: 1;
+  height: 1px;
+  margin: 0 1px;
+
+  background-color: var(--line-separator);
+}
+
+.login-facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-facebook a {
+  color: var(--login-facebook);
+}
+
+.login-facebook a:nth-child(1) {
+  font-weight: 600;
+}
+
+.not-account {
+}
+
+.get-the-app {
+}
+
+.shops {
+  display: flex;
+  align-items: center;
+}
+
+/* .app-download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+} */
+
+.app-download:nth-child(1) {
+  background-image: url("./assets/images/app-store.png");
+}
+
+.app-download:nth-child(2) {
+  background-image: url("./assets/images/google-play.png");
+}
+
+.not-account .sign-up {
+  font-weight: 600;
+  color: var(--btn-sign);
+}

@@ -56,6 +56,7 @@ body {
 }
 
 .instagram-group form input {
+  font-size: small;
   padding: 0.6rem;
   border-radius: 3px;
   border: 1px solid rgba(219, 219, 219, 1);
@@ -102,6 +103,9 @@ body {
 }
 
 .login-facebook a {
+  display: flex;
+  align-items: center;
+
   color: var(--login-facebook);
 }
 
@@ -109,38 +113,61 @@ body {
   font-weight: 700;
 }
 
+.login-facebook a:nth-child(2) {
+  font-size: 12px;
+}
+
+.login-facebook img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
 .not-account {
   align-self: center;
 }
 
 .get-the-app {
+  margin-top: 1.5rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .shops {
-  /* display: flex;
-  align-items: center; */
+  display: flex;
 }
 
 .app-download {
-  height: 3rem;
+  height: 2.9rem;
   width: 10rem;
+  margin: 1.5rem 0.3rem;
+
   background-size: cover;
 }
 
-.shops a:nth-child(1) {
+.app-download:nth-child(1) {
   background-image: url("./assets/images/app-store.png");
 }
 
-.shops a:nth-child(2) {
+.app-download:nth-child(2) {
   background-image: url("./assets/images/google-play.png");
 }
 
 .not-account .sign-up {
   font-weight: 600;
   color: var(--btn-sign);
+}
+
+.about-us {
+  color: var(--color-or);
+  font-size: 12px;
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 450px) {

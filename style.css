@@ -26,6 +26,8 @@ body {
 
 .instagram-wrapper {
   margin: 3rem 0;
+
+  display: flex;
 }
 
 .instagram-logo {
@@ -163,11 +165,17 @@ body {
 .about-us {
   color: var(--color-or);
   font-size: 12px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 875px) {
+  .instagram-phones {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
@@ -182,5 +190,30 @@ body {
   /* .instagram-group:nth-child(1) { */
   .box-one {
     padding: 0 3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .separator {
+    flex-shrink: 2;
+  }
+
+  .login-account form {
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 310px) {
+  .get-app {
+    margin-bottom: 2rem;
+  }
+
+  .shops {
+    flex-direction: column;
+  }
+
+  .app-download {
+    margin: 0;
+    margin-bottom: 0.5rem;
   }
 }

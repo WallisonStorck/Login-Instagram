@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="Login Instagram" src="./instagram.png">
+  <img alt="Login Instagram" src="./instagram-tests.png">
 </p>
 
 <br>

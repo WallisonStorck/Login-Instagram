@@ -4,6 +4,7 @@
   --line-separator: rgb(219, 219, 219);
   --color-or: #959595;
   --btn-sign: #0095f6;
+  --btn-sign-disabled: #afdcf9;
   --login-facebook: #385185;
 }
 
@@ -25,11 +26,10 @@ body {
 }
 
 .instagram-wrapper {
-  margin: 3rem 0;
+  margin-top: 3rem;
 
   display: flex;
 }
-
 .instagram-logo {
   margin: 2.5rem 0;
 
@@ -58,7 +58,9 @@ body {
 }
 
 .instagram-group form input {
-  font-size: small;
+  min-height: 36px;
+
+  font-size: 12px;
   padding: 0.6rem;
   border-radius: 3px;
   border: 1px solid rgba(219, 219, 219, 1);
@@ -71,7 +73,8 @@ body {
   border-radius: 3px;
   color: var(--background-white);
   font-weight: 600;
-  background-color: var(--btn-sign);
+  /* background-color: var(--btn-sign); */
+  background-color: var(--btn-sign-disabled);
 }
 
 .separator {
@@ -165,7 +168,6 @@ body {
 .about-us {
   color: var(--color-or);
   font-size: 12px;
-  /* margin-top: 1rem; */
 
   display: flex;
   flex-direction: column;
